@@ -1,0 +1,119 @@
+<style>
+  .farmer-market-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    min-height: 1024px;
+    overflow: hidden;
+    align-items: center;
+    padding: 67px 80px 228px;
+  }
+  @media (max-width: 991px) {
+    .farmer-market-container {
+      padding: 0 20px 100px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .content-wrapper {
+    position: relative;
+    display: flex;
+    margin-left: 26px;
+    width: 437px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-container {
+    display: flex;
+    margin-left: 34px;
+    flex-direction: column;
+    color: rgba(31, 162, 222, 1);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .header-container {
+      margin-left: 10px;
+    }
+  }
+  .market-title {
+    font: 40px ABeeZee, sans-serif;
+    border: 1px solid rgba(31, 162, 222, 1);
+  }
+  .market-subtitle {
+    align-self: center;
+    margin: 67px 0 0 11px;
+    font: 22px Judson, sans-serif;
+    border: 1px solid rgba(31, 162, 222, 1);
+  }
+  @media (max-width: 991px) {
+    .market-subtitle {
+      margin-top: 40px;
+    }
+  }
+  .market-image {
+    aspect-ratio: 1.3;
+    object-fit: contain;
+    object-position: center;
+    width: 407px;
+    margin-top: 100px;
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .market-image {
+      margin-top: 40px;
+    }
+  }
+  .cta-button {
+    border-radius: 20px;
+    background-color: rgba(27, 108, 117, 1);
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    margin: 105px 0 0 18px;
+    padding: 2px 70px 40px;
+    font: 600 64px ITC Bookman Demi, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .cta-button {
+      font-size: 40px;
+      white-space: initial;
+      margin: 40px 0 0 10px;
+      padding: 0 20px;
+    }
+  }
+  .abril-fatface-font {
+    font-family: Abril Fatface, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+</style>
+
+<div class="farmer-market-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec9ce5ee6325b2112ef9a9955277371757bec2ea9a2908f2da3020d7e7894d9f?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="background-image"
+    alt=""
+  />
+  <div class="content-wrapper">
+    <div class="header-container">
+      <div class="market-title">
+        F<span class="abril-fatface-font">armer Marke</span>t
+      </div>
+      <div class="market-subtitle">Food means Quality</div>
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ec6ab698dc5810da5cffb6f41e38df42b4351e466200bcc5555ed7bca2556e9?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+      class="market-image"
+      alt="Farmer's market produce"
+    />
+    <button class="cta-button" tabindex="0">let's-Go</button>
+  </div>
+</div>

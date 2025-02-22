@@ -1,0 +1,238 @@
+<style>
+  .auction-container {
+    border-radius: 20px;
+    background-color: rgba(100, 142, 161, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 80px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  @media (max-width: 991px) {
+    .auction-container {
+      padding: 0 20px;
+    }
+  }
+  .auction-content {
+    display: flex;
+    margin-left: 39px;
+    width: 682px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .auction-header {
+    display: flex;
+    padding-left: 25px;
+    flex-direction: column;
+    font-family: Instrument Sans, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .auction-header {
+      max-width: 100%;
+      padding-left: 20px;
+    }
+  }
+  .auction-image {
+    aspect-ratio: 1.4;
+    object-fit: contain;
+    object-position: center;
+    width: 417px;
+    border-radius: 4px;
+    align-self: center;
+    max-width: 100%;
+  }
+  .auction-date {
+    z-index: 10;
+    border-radius: 20px;
+    background-color: rgba(254, 240, 248, 1);
+    align-self: start;
+    margin-left: 41px;
+    font-size: 40px;
+    padding: 2px 58px;
+    border: 3px solid rgba(31, 162, 222, 1);
+  }
+  @media (max-width: 991px) {
+    .auction-date {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .auction-logo {
+    aspect-ratio: 1.8;
+    object-fit: contain;
+    object-position: center;
+    width: 472px;
+    max-width: 100%;
+    margin: 8px 0 0 41px;
+  }
+  .auction-tagline {
+    font-size: 38px;
+    margin-top: 26px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  @media (max-width: 991px) {
+    .auction-tagline {
+      max-width: 100%;
+    }
+  }
+  .contact-info {
+    border-radius: 20px;
+    background-color: rgba(27, 108, 117, 1);
+    margin-top: 178px;
+    width: 493px;
+    max-width: 100%;
+    padding: 6px 8px 14px 26px;
+    border: 3px solid rgba(255, 255, 255, 1);
+  }
+  @media (max-width: 991px) {
+    .contact-info {
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+  }
+  .contact-wrapper {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 26%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .contact-icons {
+      width: 100%;
+    }
+  }
+  .icon-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .icon-container {
+      margin-top: 15px;
+    }
+  }
+  .location-icon {
+    aspect-ratio: 2.19;
+    object-fit: contain;
+    object-position: center;
+    width: 90px;
+  }
+  @media (max-width: 991px) {
+    .location-icon {
+      margin-left: 8px;
+    }
+  }
+  .email-icon {
+    aspect-ratio: 2.23;
+    object-fit: contain;
+    object-position: center;
+    width: 116px;
+    margin-top: 5px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 74%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .contact-details {
+      width: 100%;
+    }
+  }
+  .details-wrapper {
+    display: flex;
+    margin-top: 7px;
+    flex-grow: 1;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 1);
+    font: 400 32px Judson, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .details-wrapper {
+      margin-top: 22px;
+    }
+  }
+  .location-text {
+    align-self: start;
+  }
+  .email-text {
+    margin-top: 27px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<div class="auction-container">
+  <div class="auction-content">
+    <div class="auction-header">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/da37b2dea545dd2a698cfb353a83181fb30976974a95c08041c974783b53889f?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+        class="auction-image"
+        alt="Auction promotional image"
+      />
+      <div class="auction-date">DATE OF AUCTION</div>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/754ee1e667b2c09694df2e0ce25f16ae57eba16ed92a88a846f1f6dad3f30d15?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+        class="auction-logo"
+        alt="Auction logo"
+      />
+      <p class="auction-tagline">
+        Don't miss out – the freshest deals are just a bid away!
+      </p>
+    </div>
+    <div class="contact-info">
+      <div class="contact-wrapper">
+        <div class="contact-icons">
+          <div class="icon-container">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb4e51ac979da8164e01721f895c7e9dc8be305726ce40866fe4af10837cb37?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+              class="location-icon"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd60fa463a2d069fc4965c36d048c53c27c70c4d531acabcc04103b22b3eb95c?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+              class="email-icon"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="details-wrapper">
+            <p class="location-text">Modhera x, Mehsana</p>
+            <p class="email-text">patelsveges0@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

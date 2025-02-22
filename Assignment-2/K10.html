@@ -1,0 +1,309 @@
+<style>
+  .auction-container {
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 1);
+    display: flex;
+    padding-bottom: 12px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .auction-header {
+    width: 100%;
+  }
+  .header-content {
+    gap: 20px;
+    display: flex;
+  }
+  .header-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 34%;
+    margin-left: 0px;
+  }
+  .header-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  .header-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 66%;
+    margin-left: 20px;
+  }
+  .header-text-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 0.84px;
+    font: 400 28px Roboto, sans-serif;
+  }
+  .header-secondary-image {
+    aspect-ratio: 1.62;
+    object-fit: contain;
+    object-position: center;
+    width: 658px;
+    align-self: end;
+    max-width: 100%;
+  }
+  .auction-title {
+    border-radius: 50%;
+    align-self: start;
+    margin-top: 36px;
+    padding: 39px 43px;
+    border: 5px solid rgba(31, 162, 222, 1);
+  }
+  .auction-body {
+    z-index: 10;
+    margin-top: -26px;
+    width: 100%;
+  }
+  .body-content {
+    gap: 20px;
+    display: flex;
+  }
+  .body-left-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+    margin-left: 0px;
+  }
+  .body-left-content {
+    flex-grow: 1;
+  }
+  .body-left-inner {
+    gap: 20px;
+    display: flex;
+  }
+  .body-left-images {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 64%;
+    margin-left: 0px;
+  }
+  .image-stack {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .stack-image-1 {
+    aspect-ratio: 1.51;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  .stack-image-2 {
+    aspect-ratio: 1.61;
+    object-fit: contain;
+    object-position: center;
+    width: 171px;
+    align-self: end;
+    max-width: 100%;
+    margin: 17px 39px 0 0;
+  }
+  .body-right-image {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 36%;
+    margin-left: 20px;
+  }
+  .right-image {
+    aspect-ratio: 2.99;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 380px;
+    flex-grow: 1;
+  }
+  .body-right-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 20px;
+  }
+  .right-column-content {
+    display: flex;
+    margin-top: 35px;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .right-column-image-1 {
+    aspect-ratio: 1.36;
+    object-fit: contain;
+    object-position: center;
+    width: 419px;
+    align-self: end;
+    max-width: 100%;
+  }
+  .right-column-image-2 {
+    aspect-ratio: 1.63;
+    object-fit: contain;
+    object-position: center;
+    width: 139px;
+    margin-top: 58px;
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .auction-header {
+      max-width: 100%;
+    }
+    .header-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+    .header-image-wrapper {
+      width: 100%;
+    }
+    .header-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    .header-text-wrapper {
+      width: 100%;
+    }
+    .header-text-content {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    .auction-title {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .auction-body {
+      max-width: 100%;
+    }
+    .body-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+    .body-left-column {
+      width: 100%;
+    }
+    .body-left-content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .body-left-inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+    .body-left-images {
+      width: 100%;
+    }
+    .image-stack {
+      max-width: 100%;
+      margin-top: 14px;
+    }
+    .stack-image-1 {
+      max-width: 100%;
+    }
+    .stack-image-2 {
+      margin-right: 10px;
+    }
+    .body-right-image {
+      width: 100%;
+    }
+    .right-image {
+      margin-top: 40px;
+    }
+    .body-right-column {
+      width: 100%;
+    }
+    .right-column-content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .right-column-image-2 {
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<div class="auction-container">
+  <div class="auction-header">
+    <div class="header-content">
+      <div class="header-image-wrapper">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d917a6324a8588bde2835f232c237b09f4ca030e095d18ed546463faa0f97f4?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="header-image"
+          alt="Auction header image"
+        />
+      </div>
+      <div class="header-text-wrapper">
+        <div class="header-text-content">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/53536bd8d209decc0d8f32b0c91ccbe6496d52b501260a27e43b2e8d48b769c5?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="header-secondary-image"
+            alt="Secondary header image"
+          />
+          <h2 class="auction-title">
+            Some crops of food & veges auction
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="auction-body">
+    <div class="body-content">
+      <div class="body-left-column">
+        <div class="body-left-content">
+          <div class="body-left-inner">
+            <div class="body-left-images">
+              <div class="image-stack">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e612b5dc30df846e8dafe6b87ecfa4357cc497161112eb2f5892789cf3851442?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+                  class="stack-image-1"
+                  alt="Stacked image 1"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ae683a1ba9f0dec9e9055631613ffdaacc02eca71204feba23c902b9bb79da?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+                  class="stack-image-2"
+                  alt="Stacked image 2"
+                />
+              </div>
+            </div>
+            <div class="body-right-image">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/328a8e512c71389db021b11e8992f2f5ae97a61374693eb91e3079f41f370605?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+                class="right-image"
+                alt="Right column image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-right-column">
+        <div class="right-column-content">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8dc72fde95c8d1c11d1b963b25def7cc598b4ec873bbb55204ec0fa4bd8c987b?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="right-column-image-1"
+            alt="Right column image 1"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c452b4667c9733f587e314e2f6e7482267aa65b885a9efd2b3d28c8f1b7cf12d?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="right-column-image-2"
+            alt="Right column image 2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

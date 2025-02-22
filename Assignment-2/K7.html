@@ -1,0 +1,289 @@
+<style>
+  .spice-stall {
+    border-radius: 20px;
+    background-color: rgba(99, 112, 118, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 80px 11px 0;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  @media (max-width: 991px) {
+    .spice-stall {
+      padding-right: 20px;
+    }
+  }
+  .content-wrapper {
+    display: flex;
+    margin-left: 29px;
+    width: 919px;
+    max-width: 100%;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 1);
+    font: 400 35px Instrument Sans, sans-serif;
+  }
+  .main-image {
+    aspect-ratio: 1.86;
+    object-fit: contain;
+    object-position: center;
+    width: 694px;
+    align-self: center;
+    z-index: 10;
+    max-width: 100%;
+  }
+  .description {
+    margin-top: -21px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+    }
+  }
+  .image-section {
+    align-self: start;
+    margin-top: 19px;
+    width: 812px;
+    max-width: 100%;
+  }
+  .image-container {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .image-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 83%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .image-column {
+      width: 100%;
+    }
+  }
+  .secondary-image {
+    aspect-ratio: 2.38;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 0px 20px 20px 0px;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .secondary-image {
+      max-width: 100%;
+      margin-top: 26px;
+    }
+  }
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 17%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .text-column {
+      width: 100%;
+    }
+  }
+  .slogan {
+    color: rgba(255, 255, 255, 1);
+    margin-top: 17px;
+    font: 400 40px Instrument Sans, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .slogan {
+      margin-top: 40px;
+    }
+  }
+  .contact-section {
+    border-radius: 20px;
+    background-color: rgba(27, 108, 117, 1);
+    margin-top: 44px;
+    width: 493px;
+    max-width: 100%;
+    padding: 4px 30px 10px;
+    border: 3px solid rgba(255, 255, 255, 1);
+  }
+  @media (max-width: 991px) {
+    .contact-section {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  .contact-container {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .logo-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 28%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .logo-column {
+      width: 100%;
+    }
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .logo-wrapper {
+      margin-top: 19px;
+    }
+  }
+  .logo-image {
+    aspect-ratio: 2.19;
+    object-fit: contain;
+    object-position: center;
+    width: 90px;
+    align-self: center;
+  }
+  .secondary-logo {
+    aspect-ratio: 2.23;
+    object-fit: contain;
+    object-position: center;
+    width: 116px;
+    margin-top: 11px;
+  }
+  .info-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 72%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .info-column {
+      width: 100%;
+    }
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: rgba(255, 255, 255, 1);
+    margin: auto 0;
+    font: 400 32px Judson, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .contact-info {
+      margin-top: 26px;
+    }
+  }
+  .address {
+    margin-left: 15px;
+  }
+  @media (max-width: 991px) {
+    .address {
+      margin-left: 10px;
+    }
+  }
+  .email {
+    margin-top: 29px;
+  }
+  @media (max-width: 991px) {
+    .email {
+      margin-right: 2px;
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<div class="spice-stall">
+  <div class="content-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/844dc7d1b09471c7a441e79833288254514cd07e74b975214b61455a2dc477f8?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+      class="main-image"
+      alt="Soni's Spice Stall main display"
+    />
+    <p class="description">
+      we've got a wide variety at unbeatable prices. Whether you're a
+      restaurant, retailer, or spice enthusiast, you won't want to miss out on
+      our fresh, premium selection. Bid, win, and add flavor to your shelves –
+      the finest spices are just a bid away!
+    </p>
+  </div>
+  <div class="image-section">
+    <div class="image-container">
+      <div class="image-column">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/89a86d925022686bd9f037e7092d68a0c9f0ea5e906e99ed375e432a4e71b64e?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="secondary-image"
+          alt="Spice variety showcase"
+        />
+      </div>
+      <div class="text-column">
+        <div class="slogan">
+          VISIT
+          <br />
+          ONCES
+          <br />
+          IN
+          <br />
+          LIFE
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-section">
+    <div class="contact-container">
+      <div class="logo-column">
+        <div class="logo-wrapper">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb4e51ac979da8164e01721f895c7e9dc8be305726ce40866fe4af10837cb37?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="logo-image"
+            alt="Soni's Spices logo"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd60fa463a2d069fc4965c36d048c53c27c70c4d531acabcc04103b22b3eb95c?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="secondary-logo"
+            alt="Soni's Spices secondary logo"
+          />
+        </div>
+      </div>
+      <div class="info-column">
+        <div class="contact-info">
+          <p class="address">Nagalpur x, Mehsana</p>
+          <p class="email">sonispices@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

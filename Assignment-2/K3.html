@@ -1,0 +1,50 @@
+<style>
+  .rules-container {
+    transform: rotate(3.141592653589793rad);
+    border-radius: 30px;
+    background-color: rgba(56, 81, 92, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 15px 0 0 80px;
+  }
+  .border-box {
+    border-radius: 20px;
+    align-self: center;
+    display: flex;
+    margin-left: 154px;
+    width: 577px;
+    max-width: 100%;
+    height: 76px;
+    border: 3px solid rgba(254, 240, 248, 1);
+  }
+  .rules-image {
+    aspect-ratio: 1.14;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 30px 20px 20px 0;
+    align-self: flex-end;
+    margin-top: 48px;
+    max-width: 1008px;
+  }
+  @media (max-width: 991px) {
+    .rules-container {
+      padding-left: 20px;
+    }
+    .rules-image {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<div class="rules-container">
+  <div class="border-box"></div>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ee6260c87d1ab032aef30065c8722db3bb2933624fe0c1dd6910cf317def69ee?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="rules-image"
+    alt="Rules illustration"
+  />
+</div>

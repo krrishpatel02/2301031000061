@@ -1,0 +1,353 @@
+<style>
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    position: relative;
+    min-height: 1024px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 271px 80px;
+  }
+  @media (max-width: 991px) {
+    .login-container {
+      padding: 100px 20px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login-form-wrapper {
+    position: relative;
+    display: flex;
+    margin-left: 14px;
+    width: 303px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .form-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: rgba(31, 162, 222, 1);
+    padding: 0 13px;
+    font: 400 20px ABeeZee, sans-serif;
+  }
+  .logo {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 168px;
+    align-self: center;
+    max-width: 100%;
+  }
+  .username-input-wrapper {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    margin-top: 19px;
+    gap: 17px;
+    padding: 17px 11px;
+    border: 3px solid rgba(31, 162, 222, 1);
+  }
+  @media (max-width: 991px) {
+    .username-input-wrapper {
+      margin-right: 5px;
+    }
+  }
+  .username-icon {
+    aspect-ratio: 2.53;
+    object-fit: contain;
+    object-position: center;
+    width: 53px;
+  }
+  .username-input {
+    flex-grow: 1;
+    width: 175px;
+    border: 1px solid rgba(31, 162, 222, 1);
+    background: transparent;
+    color: rgba(31, 162, 222, 1);
+  }
+  .password-input-wrapper {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    margin-top: 27px;
+    gap: 16px;
+    white-space: nowrap;
+    padding: 14px 13px;
+    border: 3px solid rgba(31, 162, 222, 1);
+  }
+  @media (max-width: 991px) {
+    .password-input-wrapper {
+      margin-left: 5px;
+      white-space: initial;
+    }
+  }
+  .password-icon {
+    aspect-ratio: 2.14;
+    object-fit: contain;
+    object-position: center;
+    width: 47px;
+    align-self: start;
+    margin-top: 4px;
+  }
+  .password-input {
+    flex-grow: 1;
+    width: 180px;
+    border: 1px solid rgba(31, 162, 222, 1);
+    background: transparent;
+    color: rgba(31, 162, 222, 1);
+  }
+  .login-button {
+    border-radius: 20px;
+    background-color: rgba(27, 108, 117, 1);
+    margin-top: 104px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    padding: 8px 70px;
+    font: 600 36px ITC Bookman Demi, -apple-system, Roboto, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .login-button {
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<div class="login-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/befee7bc6fdb84f1b0189e7ee7b90ba2ff4564c55e326afcac62b0d594d6936b?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="background-image"
+    alt=""
+  />
+  <div class="login-form-wrapper">
+    <form class="form-content">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/73f82d3f84702f4b8350940e9be441558ece7e4cc583b2193f04c5293516af6a?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+        class="logo"
+        alt="Company logo"
+      />
+      <div class="username-input-wrapper">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/55cbe89259f121379b523af8374eada4305cbc514ae9c5306e38265113b27920?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="username-icon"
+          alt=""
+        />
+        <label for="username-input" class="visually-hidden">User Name</label>
+        <input type="text" id="username-input" class="username-input" placeholder="User Name" aria-label="User Name" />
+      </div>
+      <div class="password-input-wrapper">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b3dcd5f5820acbedc6bf691164e828636240871d8461f88cf5e18e8fbf2a2b4?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="password-icon"
+          alt=""
+        />
+        <label for="password-input" class="visually-hidden">Password</label>
+        <input type="password" id="password-input" class="password-input" placeholder="Password" aria-label="Password" />
+      </div>
+      <button type="submit" class="login-button">Log-In</button>
+    </form>
+  </div>
+</div><style>
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 30px;
+      position: relative;
+      min-height: 1024px;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      padding: 271px 80px;
+    }
+    @media (max-width: 991px) {
+      .login-container {
+        padding: 100px 20px;
+      }
+    }
+    .background-image {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .login-form-wrapper {
+      position: relative;
+      display: flex;
+      margin-left: 14px;
+      width: 303px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .form-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      color: rgba(31, 162, 222, 1);
+      padding: 0 13px;
+      font: 400 20px ABeeZee, sans-serif;
+    }
+    .logo {
+      aspect-ratio: 1.01;
+      object-fit: contain;
+      object-position: center;
+      width: 168px;
+      align-self: center;
+      max-width: 100%;
+    }
+    .username-input-wrapper {
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 1);
+      display: flex;
+      margin-top: 19px;
+      gap: 17px;
+      padding: 17px 11px;
+      border: 3px solid rgba(31, 162, 222, 1);
+    }
+    @media (max-width: 991px) {
+      .username-input-wrapper {
+        margin-right: 5px;
+      }
+    }
+    .username-icon {
+      aspect-ratio: 2.53;
+      object-fit: contain;
+      object-position: center;
+      width: 53px;
+    }
+    .username-input {
+      flex-grow: 1;
+      width: 175px;
+      border: 1px solid rgba(31, 162, 222, 1);
+      background: transparent;
+      color: rgba(31, 162, 222, 1);
+    }
+    .password-input-wrapper {
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 1);
+      display: flex;
+      margin-top: 27px;
+      gap: 16px;
+      white-space: nowrap;
+      padding: 14px 13px;
+      border: 3px solid rgba(31, 162, 222, 1);
+    }
+    @media (max-width: 991px) {
+      .password-input-wrapper {
+        margin-left: 5px;
+        white-space: initial;
+      }
+    }
+    .password-icon {
+      aspect-ratio: 2.14;
+      object-fit: contain;
+      object-position: center;
+      width: 47px;
+      align-self: start;
+      margin-top: 4px;
+    }
+    .password-input {
+      flex-grow: 1;
+      width: 180px;
+      border: 1px solid rgba(31, 162, 222, 1);
+      background: transparent;
+      color: rgba(31, 162, 222, 1);
+    }
+    .login-button {
+      border-radius: 20px;
+      background-color: rgba(27, 108, 117, 1);
+      margin-top: 104px;
+      color: rgba(255, 255, 255, 1);
+      white-space: nowrap;
+      padding: 8px 70px;
+      font: 600 36px ITC Bookman Demi, -apple-system, Roboto, Helvetica, sans-serif;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .login-button {
+        margin-top: 40px;
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
+  
+  <div class="login-container">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/befee7bc6fdb84f1b0189e7ee7b90ba2ff4564c55e326afcac62b0d594d6936b?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+      class="background-image"
+      alt=""
+    />
+    <div class="login-form-wrapper">
+      <form class="form-content">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/73f82d3f84702f4b8350940e9be441558ece7e4cc583b2193f04c5293516af6a?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="logo"
+          alt="Company logo"
+        />
+        <div class="username-input-wrapper">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/55cbe89259f121379b523af8374eada4305cbc514ae9c5306e38265113b27920?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="username-icon"
+            alt=""
+          />
+          <label for="username-input" class="visually-hidden">User Name</label>
+          <input type="text" id="username-input" class="username-input" placeholder="User Name" aria-label="User Name" />
+        </div>
+        <div class="password-input-wrapper">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b3dcd5f5820acbedc6bf691164e828636240871d8461f88cf5e18e8fbf2a2b4?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+            class="password-icon"
+            alt=""
+          />
+          <label for="password-input" class="visually-hidden">Password</label>
+          <input type="password" id="password-input" class="password-input" placeholder="Password" aria-label="Password" />
+        </div>
+        <button type="submit" class="login-button">Log-In</button>
+      </form>
+    </div>
+  </div>
